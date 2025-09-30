@@ -14,7 +14,7 @@ function App() {
             <img src={viteLogo} className="logo w-24 h-24" alt="Vite logo" />
           </a>
           <a href="https://react.dev" target="_blank">
-            <img src={reactLogo} className="logo react w-24 h-24 animate-spin" alt="React logo" style={{animationDuration:"10s"}} />
+            <img src={reactLogo} className="logo react w-24 h-24 animate-spin" alt="React logo" style={{animationDuration:"0.2s"}} />
           </a>
         </div>
         <h1 className="text-white tex-6x1 font-bold mb-16">Vite + React</h1>
