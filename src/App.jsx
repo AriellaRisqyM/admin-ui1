@@ -1,39 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className="min-h-screen bg- bg-neutral-800 flex flex-col items-center justify-center text-center">
-        <div className="flex items-center justify-center space-x-8 mb-12">
-          <a href="https://vite.dev" target="_blank">
-            <img src={viteLogo} className="logo w-24 h-24" alt="Vite logo" />
-          </a>
-          <a href="https://react.dev" target="_blank">
-            <img src={reactLogo} className="logo react w-24 h-24 animate-spin" alt="React logo" style={{animationDuration:"0.2s"}} />
-          </a>
+    <div className="bg-white-200 min-h-screen flex flex-col items-center justify-center">
+      <div className="flex shadow-lg max-5xl">
+        <div className="hidden md:block flex rounded-l-2xl w-100">
+          <img className="w-[600] h-[500]" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt=""/>
         </div>
-        <h1 className="text-white tex-6x1 font-bold mb-16">Vite + React</h1>
-        <div className="text-sm space-y-6 mb-8">
-          <button onClick={() => setCount((count) => count + 1)}
-          className="bg-neutral-900 text-white py-2 px-6 rounded-lg text-lg"
-            >
-            count is {count}
-          </button>
-          <p className="text-neutral-400">
-            Edit <code>src/App.jsx</code> and save to test HMR
-          </p>
+        {/* form login */}
+        <div>
+          <div className="rounded bg-gray-100 p-3 w-96 ">
+            <h1 className="text-center font-bold">Login</h1>
+            <ul className="m-2 p-5 space-y-3">
+              <span>Email</span>
+              <input type="text" placeholder='Masukkan Email' className="border-black rounded w-full"/><br/>
+              <span>Password</span>
+              <input type="password" placeholder='Masukkan Password' className="border-black rounded w-full" />
+              <button class=" bg-blue-500 text-white p-2   rounded-lg w-full hover:bg-blue-600">Login</button>
+            </ul>
+          </div>
         </div>
-        <p className="read-the-docs text-neutral-500">
-          Click on the Vite and React logos to learn more
-        </p>
       </div>
+    </div>
     </>
   )
 }
-
 export default App
