@@ -1,31 +1,69 @@
-import React from 'react'
-import './App.css'
+import "./App.css";
 
 function App() {
+  const courses = [
+    {
+      title: "System Administration and IT Infrastructure Services",
+    },
+    {
+      title: "Operating Systems Becoming a Power User",
+    },
+    {
+      title: "The Bits and Bytes of Computer Networking",
+    },
+    {
+      title: "Technical Support Fundamentals",
+    },
+    {
+      title: "How to Succeed at: Writing Applications",
+    },
+    {
+      title: "Medicine Administration for Carers",
+    },
+  ];
 
   return (
     <>
-    <div className="bg-white-200 min-h-screen flex flex-col items-center justify-center">
-      <div className="flex shadow-lg max-w-5xl">
-        <div className="hidden md:block  rounded-l-2xl w-96">
-          <img className="w-[600] h-[500]" src="https://th.bing.com/th/id/R.1288998aeafc4181eae659bce211566f?rik=aRoEL73U6Gag3g&riu=http%3a%2f%2fimg.jakpost.net%2fc%2f2017%2f06%2f20%2f2017_06_20_28883_1497943853._large.jpg&ehk=eI6GHUH09TK99aocow1SoJS%2brvu27TeznTt4gL6CJUs%3d&risl=&pid=ImgRaw&r=0git" alt=""/>
-        </div>
-        {/* form login */}
-        <div>
-          <div className="rounded w-96 ">
-            <h1 className="text-center font-bold">Login</h1>
-            <ul className="m-2 p-5 space-y-3">
-              <span>Email</span>
-              <input type="text" placeholder='Masukkan Email' className="border-black rounded w-full"/><br/>
-              <span>Password</span>
-              <input type="password" placeholder='Masukkan Password' className="border-black rounded w-full" />
-              <button class=" bg-blue-500 text-white p-2   rounded-lg w-full hover:bg-blue-600">Login</button>
-            </ul>
+      <div className="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        {courses.map((course, index) => (
+          <div key={index} className="shadow rounded-lg overflow-hidden flex flex-col">
+            {/* Image */}
+            <img
+              src="https://www.placehold.co/200x400"
+              alt={course.title}
+              className="w-full h-80 object-cover"
+            />
+
+            {/* Content */}
+            <div className="p-4 bg-red-100 flex flex-col justify-between h-full">
+              <h3 className="text-lg font-semibold mb-4">{course.title}</h3>
+              <div className="bg-red-50 p-2 rounded-lg">
+                <div className="text-sm text-gray-500 mt-2 flex justify-between">
+                  <span>👥 123 users</span>
+                  <span>⏱ 60</span>
+                </div>
+
+                {/* author */}
+                <div className="mt-3 mb-2 flex items-center  gap-2">
+                  <img src="https://www.placehold.co/50x50" alt="Author's Avatar" className="w-12 h-12 rounded-full object-cover"/>
+                  <div>
+                    <p className="text-sm font-medium">Author's Name</p>
+                    <p className="text-xs texs-gray-500">Designer</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Footer */}
+              <div className="mt-4 flex items- justify-between">
+                <div className="bg-white py-2 px-4 rounded">$50</div>
+                  <button className="bg-red-700 hover:bg-red-900 active:bg-red-500 text-white px-4 py-2 rounded text-sm">Get Started</button>
+              </div>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
-    </div>
     </>
-  )
+  );
 }
-export default App
+
+export default App;
