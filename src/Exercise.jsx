@@ -1,6 +1,6 @@
 import React from "react";
 import PostCard from "./PostCard";
-import { users } from "./postsData.jsx";
+import { users } from "./postsData";
 
 
 function Exercise() {
