@@ -16,4 +16,4 @@ function CheckBox(props) {
   );
 }
 
-export default CheckBox
+export default CheckBox;

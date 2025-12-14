@@ -62,4 +62,4 @@ function FormSignUp() {
   )
 }
 
-export default FormSignUp
+export default FormSignUp;

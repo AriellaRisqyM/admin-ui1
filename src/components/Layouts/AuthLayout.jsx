@@ -20,4 +20,4 @@ function AuthLayout(props) {
   );
 }
 
-export default AuthLayout
+export default AuthLayout;

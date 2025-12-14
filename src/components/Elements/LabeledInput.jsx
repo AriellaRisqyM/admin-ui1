@@ -16,4 +16,4 @@ function LabeledInput(props) {
   );
 }
 
-export default LabeledInput
+export default LabeledInput;

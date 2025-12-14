@@ -10,4 +10,4 @@ function SignUp() {
   );
 }
 
-export default SignUp
+export default SignUp;
