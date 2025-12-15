@@ -42,6 +42,7 @@ function FormSignUp() {
 
           <div className="mb-6">
             <CheckBox
+              type="checkbox"
               label="By continuing, you agree to our terms of service"
               id="terms"
               name="terms"

@@ -31,6 +31,7 @@ function FormSignIn() {
 
           <div className="mb-6">
             <CheckBox
+              type="checkbox"
               label="Keep me signed in"
               id="status"
               name="status"
