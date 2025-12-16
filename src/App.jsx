@@ -4,7 +4,7 @@ import SignUpPage from "./pages/SignUp";
 import ErrorPage from "./pages/Error";
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
-
+import Balance from "./pages/Balance";
 function App() {
   const myRouter = createBrowserRouter([
     {
