@@ -1,3 +1,4 @@
+import React from "react";
 import OverviewSVG from "../../assets/icons/Overview.svg?react";
 import TransactionSVG from "../../assets/icons/Transaction.svg?react";
 import BalanceSVG from "../../assets/icons/wallet.svg?react";
@@ -20,6 +21,12 @@ import TransportSVG from "../../assets/icons/Trasnport.svg?react";
 import ArrowRightSVG from "../../assets/icons/arrow-right.svg?react";
 import ArrowDownSVG from "../../assets/icons/Downarrow.svg?react";
 import ArrowUpSVG from "../../assets/icons/Uparrow.svg?react";
+import ArrowUpRightSVG from "../../assets/icons/arrow-up-right.svg?react";
+import EditSVG from "../../assets/icons/edit.svg?react";
+import MastercardSVG from "../../assets/icons/Mastercard-Logo.svg?react";
+import VisaSVG from "../../assets/icons/Visa_Logo.svg?react";
+import TargetSVG from "../../assets/icons/target.svg?react";
+import AwardSVG from "../../assets/icons/Award.svg?react";
 
 const createIcon =
   (SVG) =>
@@ -49,6 +56,12 @@ const Icon = {
   ArrowRight: createIcon(ArrowRightSVG),
   ArrowDown: createIcon(ArrowDownSVG),
   ArrowUp: createIcon(ArrowUpSVG),
+  Edit: createIcon(EditSVG),
+  Mastercard: createIcon(MastercardSVG),
+  Visa: createIcon(VisaSVG),
+  Target: createIcon(TargetSVG),
+  Award: createIcon(AwardSVG),
+  ArrowUpRight: createIcon(ArrowUpRightSVG),
 };
 
 export default Icon;

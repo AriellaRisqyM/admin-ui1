@@ -3,7 +3,7 @@ import React from "react";
 function Input(props) {
   const {
     id,
-    icon = false,
+    Icon = false,
     backgroundColor = false,
     border = "border-gray-03",
     ...rest
