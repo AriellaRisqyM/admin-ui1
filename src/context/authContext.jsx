@@ -26,7 +26,7 @@ export const AuthContextProvider = ({ children }) => {
 
       setUser(decoded);
       localStorage.setItem("token", token);
-    } catch (err) {
+    } catch {
       console.error("Invalid token");
     }
   };

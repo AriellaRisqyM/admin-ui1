@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react"; 
+import React, { useContext } from "react"; 
 import Logo from "../Elements/Logo";
 import Input from "../Elements/Input";
 import NotificationsIcon from '@mui/icons-material/Notifications';
@@ -31,7 +31,7 @@ function MainLayout(props) {
     { id: 7, name: "Settings", icon: <Icon.Setting />, link: "/setting" },
   ];
 
-  const { user, logout } = useContext(AuthContext);
+  const { logout } = useContext(AuthContext);
   const handleLogout = async () => {
     try {
       await logoutService();
@@ -46,8 +46,8 @@ function MainLayout(props) {
 
   return (
     <>
-	    <div className={`flex min-h-screen ${theme.name}`}>
-			<aside className="bg-defaultBlack w-28 sm:w-64 text-special-bg2 flex flex-col justify-between px-7 py-12">
+      <div className={`flex min-h-screen ${theme.name}`}>
+      <aside className="bg-defaultBlack w-28 sm:w-64 text-special-bg2 flex flex-col justify-between px-7 py-12">
                 <div>
                     <div className="mb-10">
                       <Logo variant="secondary"/>
@@ -123,7 +123,7 @@ function MainLayout(props) {
                 </header>
                 <main className="flex-1 px-6 py-4">{children}</main>
             </div>
-		</div>
+    </div>
     </>
   );
 }
