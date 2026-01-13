@@ -28,10 +28,9 @@ import VisaSVG from "../../assets/icons/Visa_Logo.svg?react";
 import TargetSVG from "../../assets/icons/target.svg?react";
 import AwardSVG from "../../assets/icons/Award.svg?react";
 
-const createIcon =
-  (SVG) =>
-  ({ size = 24, color = "currentColor", ...props }) =>
-    <SVG width={size} height={size} stroke={color} {...props} />;
+const createIcon = (SVG) => ({ size = 24, color = "currentColor", className = "", ...props }) => (
+  <SVG width={size} height={size} stroke={color} className={className} {...props} />
+);
 
 const Icon = {
   Overview: createIcon(OverviewSVG),
@@ -49,19 +48,22 @@ const Icon = {
   Food: createIcon(FoodSVG),
   Gamepad: createIcon(GamepadSVG),
   House: createIcon(HouseSVG),
+  Home: createIcon(HouseSVG),
   Movie: createIcon(MovieSVG),
+  Film: createIcon(MovieSVG),
   Other: createIcon(OtherSVG),
+  Others: createIcon(OtherSVG),
   Shopping: createIcon(ShoppingSVG),
   Transport: createIcon(TransportSVG),
   ArrowRight: createIcon(ArrowRightSVG),
   ArrowDown: createIcon(ArrowDownSVG),
   ArrowUp: createIcon(ArrowUpSVG),
+  ArrowUpRight: createIcon(ArrowUpRightSVG),
   Edit: createIcon(EditSVG),
   Mastercard: createIcon(MastercardSVG),
   Visa: createIcon(VisaSVG),
   Target: createIcon(TargetSVG),
   Award: createIcon(AwardSVG),
-  ArrowUpRight: createIcon(ArrowUpRightSVG),
 };
 
 export default Icon;

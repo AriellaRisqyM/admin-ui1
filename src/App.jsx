@@ -6,6 +6,11 @@ import SignUpPage from "./pages/SignUp";
 import ErrorPage from "./pages/Error";
 import Dashboard from "./pages/Dashboard";
 import Balance from "./pages/Balance";
+
+// Import Halaman Baru & Layout
+import ExpensesPage from "./pages/ExpensesPage";
+import MainLayout from "./components/Layouts/MainLayout";
+
 import { AuthContext } from "./context/authContext";
 
 function App() {
@@ -50,6 +55,16 @@ function App() {
       element: (
         <RequireAuth>
           <Balance />
+        </RequireAuth>
+      ),
+    },
+    {
+      path: "/expenses",
+      element: (
+        <RequireAuth>
+          <MainLayout>
+            <ExpensesPage />
+          </MainLayout>
         </RequireAuth>
       ),
     },
